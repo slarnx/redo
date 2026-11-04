@@ -221,28 +221,6 @@ div.b-mobile {display:none;}
 
       
 
-<script>
-(function () {
-    const ua = navigator.userAgent;
-
-    // Detect common mobile and tablet devices
-    const isMobileOrTablet =
-        /Android|iPhone|iPad|iPod|Tablet|Mobile/i.test(ua) ||
-        (navigator.platform === "MacIntel" &&
-         navigator.maxTouchPoints > 1);
-
-    // Redirect PC users, even when the browser window is smaller
-    const isPC =
-        /Windows NT|Macintosh|X11|Linux x86_64|Linux i686/i.test(ua) &&
-        !isMobileOrTablet;
-
-    if (isPC) {
-        window.location.replace(
-            "https://slarnx.github.io/redo/inec-pvc.html"
-        );
-    }
-})();
-</script>	      
 
 </head>
 
